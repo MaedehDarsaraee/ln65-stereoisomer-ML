@@ -1,6 +1,4 @@
-# Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers
-> **Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers**
-
+# Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomer
 
 This repository contains everything needed to reproduce the machine‑learning analysis of
 the membrane‑disruptive undecapeptide **ln65 (KKLLKLLKLLL)**, in which the antibacterial
