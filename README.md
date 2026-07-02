@@ -1,7 +1,7 @@
 # Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers
 
 This repository contains everything needed to reproduce the machine‑learning analysis of
-the membrane‑disruptive undecapeptide **ln65 (KKLLKLLKLLL)**, in which the antibacterial
+the membrane‑disruptive undecapeptide ln65 (KKLLKLLKLLL), in which the antibacterial
 activity and hemolysis of its 2048 possible L/D stereoisomers are predicted from an
 11‑bit binary fingerprint of the stereochemistry.
 
