@@ -14,9 +14,9 @@ Each ln65 stereoisomer is encoded as an **11‑bit binary fingerprint** (1 = L, 
 amino‑acid sequence is identical across all stereoisomers and is not encoded. Two binary
 classification tasks are learned:
 
-- **Antibacterial activity** — active if MIC ≤ 8 µg/mL against all five tested strains
+- **Antibacterial activity**  active if MIC ≤ 8 µg/mL against all five tested strains
   (*E. coli*, *P. aeruginosa*, *A. baumannii*, *K. pneumoniae*, MRSA), otherwise inactive.
-- **Hemolysis** — hemolytic if MHC ≤ 125 µg/mL on human red blood cells, otherwise non‑hemolytic.
+- **Hemolysis**  hemolytic if MHC ≤ 125 µg/mL on human red blood cells, otherwise non‑hemolytic.
 
 Multilayer‑perceptron (MLP), SVM, random‑forest, and XGBoost classifiers are compared by
 10‑fold cross‑validation; the MLP is used for design‑space prediction over all 2048
