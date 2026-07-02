@@ -8,7 +8,7 @@ activity and hemolysis of its 2048 possible L/D stereoisomers are predicted from
 
 ## Overview
 
-Each ln65 stereoisomer is encoded as an **11‑bit binary fingerprint** (1 = L, 0 = D); the
+Each ln65 stereoisomer is encoded as an 11‑bit binary fingerprint (1 = L, 0 = D); the
 amino‑acid sequence is identical across all stereoisomers and is not encoded. Two binary
 classification tasks are learned:
 
