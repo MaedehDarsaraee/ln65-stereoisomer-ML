@@ -1,10 +1,5 @@
 # Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers
 
-Code, data, and trained models accompanying the paper:
-
-> **Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers**
-> [Author list], *[Journal]* **[Year]**. DOI: [add on acceptance]
-
 This repository contains everything needed to reproduce the machine‑learning analysis of
 the membrane‑disruptive undecapeptide **ln65 (KKLLKLLKLLL)**, in which the antibacterial
 activity and hemolysis of its 2048 possible L/D stereoisomers are predicted from an
