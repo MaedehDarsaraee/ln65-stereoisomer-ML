@@ -1,10 +1,16 @@
-# Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomer
+# Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers
+
+Code, data, and trained models accompanying the paper:
+
+> **Machine‑Learning Guided Exploration of Antimicrobial Peptide Stereoisomers**
+> [Author list], *[Journal]* **[Year]**. DOI: [add on acceptance]
 
 This repository contains everything needed to reproduce the machine‑learning analysis of
 the membrane‑disruptive undecapeptide **ln65 (KKLLKLLKLLL)**, in which the antibacterial
 activity and hemolysis of its 2048 possible L/D stereoisomers are predicted from an
 11‑bit binary fingerprint of the stereochemistry.
 
+---
 
 ## Overview
 
@@ -12,9 +18,9 @@ Each ln65 stereoisomer is encoded as an **11‑bit binary fingerprint** (1 = L, 
 amino‑acid sequence is identical across all stereoisomers and is not encoded. Two binary
 classification tasks are learned:
 
-- **Antibacterial activity**  active if MIC ≤ 8 µg/mL against all five tested strains
+- **Antibacterial activity** — active if MIC ≤ 8 µg/mL against all five tested strains
   (*E. coli*, *P. aeruginosa*, *A. baumannii*, *K. pneumoniae*, MRSA), otherwise inactive.
-- **Hemolysis**  hemolytic if MHC ≤ 125 µg/mL on human red blood cells, otherwise non‑hemolytic.
+- **Hemolysis** — hemolytic if MHC ≤ 125 µg/mL on human red blood cells, otherwise non‑hemolytic.
 
 Multilayer‑perceptron (MLP), SVM, random‑forest, and XGBoost classifiers are compared by
 10‑fold cross‑validation; the MLP is used for design‑space prediction over all 2048
@@ -37,10 +43,17 @@ nearest‑neighbor (point‑mutation) approach.
 ### `data/`
 | File | Description |
 |------|-------------|
+| `synthesized.csv` | initial training set (269 entries) exactly as used to train the first-round model and generate the prospective candidates |
 | `synthesized_full-deduplicated.csv` | 321 experimentally tested stereoisomers (deduplicated), with `active` and `not hemolytic` labels |
 | `augmented_deduplicated.csv` | 620‑stereoisomer augmented set (measured + missing mirror‑image enantiomers) |
 | `synthesized_Hippo.csv` | 31 previously reported ln65 stereoisomers (CD analysis) |
 | `cd_data_with_act_hem_labels.xlsx` | circular‑dichroism measurements with activity/hemolysis labels |
+
+> **Note on `synthesized.csv`:** this file contains a small number of duplicate entries and one
+> activity label later found to be incorrect. It is retained unchanged so that the reported
+> initial-model results (`01_model_eval.ipynb`) can be reproduced exactly. The corrected,
+> deduplicated dataset (`synthesized_full-deduplicated.csv`) is used for the full and augmented
+> model analyses.
 
 ### `models/`
 | File | Trained on | Used for |
@@ -72,8 +85,8 @@ nearest‑neighbor (point‑mutation) approach.
 ## Installation
 
 ```bash
-git clone https://github.com/<user>/<repo>.git
-cd <repo>
+git clone https://github.com/MaedehDarsaraee/ln65-stereoisomer-ML.git
+cd ln65-stereoisomer-ML
 python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -86,8 +99,23 @@ Run the notebooks in `notebooks/`. A fixed random seed (`random_state = 42`) is 
 throughout. Cross‑validation of the augmented (620) model keeps mirror‑image pairs in the
 same fold to avoid information leakage.
 
+## Citation
+
+```bibtex
+@article{ln65_ml,
+  title   = {Machine-Learning Guided Exploration of Antimicrobial Peptide Stereoisomers},
+  author  = {[Authors]},
+  journal = {[Journal]},
+  year    = {[Year]},
+  doi     = {[DOI]}
+}
+```
+
+## License
+
+[Choose a license — e.g. MIT for code, CC‑BY 4.0 for data.]
 
 ## Contact
 
-maedeh.darsaraee@unibe.ch
+Maedeh Darsaraee — maedeh.darsaraee@unibe.ch
 Reymond group, University of Bern.

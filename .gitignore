@@ -1,0 +1,23 @@
+# editor / assistant
+.claude/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# environments
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# temp / scratch files
+_*.png
+_*.emf
+_*.itp
+_fig5*
+_si_*
+_t2s3.pkl
+tool-results/
