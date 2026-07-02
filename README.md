@@ -5,7 +5,6 @@ the membrane‑disruptive undecapeptide **ln65 (KKLLKLLKLLL)**, in which the ant
 activity and hemolysis of its 2048 possible L/D stereoisomers are predicted from an
 11‑bit binary fingerprint of the stereochemistry.
 
----
 
 ## Overview
 
