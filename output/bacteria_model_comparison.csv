@@ -1,21 +1,21 @@
-strain,model,n,AUC,AUC_std,AUC_scrambled,accuracy,precision,recall,F1
-E. coli W3110,MLP,265,0.84,0.06,0.55,0.81,0.85,0.93,0.89
-E. coli W3110,SVM,265,0.78,0.1,0.52,0.79,0.8,0.99,0.88
-E. coli W3110,RF,265,0.69,0.1,0.53,0.79,0.81,0.96,0.88
-E. coli W3110,XGBoost,265,0.79,0.1,0.53,0.79,0.83,0.92,0.87
-P. aeruginosa PAO1,MLP,265,0.81,0.1,0.5,0.77,0.79,0.69,0.73
-P. aeruginosa PAO1,SVM,265,0.79,0.11,0.44,0.74,0.77,0.65,0.7
-P. aeruginosa PAO1,RF,265,0.77,0.12,0.46,0.69,0.68,0.7,0.68
-P. aeruginosa PAO1,XGBoost,265,0.77,0.11,0.52,0.71,0.7,0.69,0.69
-A. baumannii ATCC19606,MLP,265,0.91,0.04,0.59,0.82,0.84,0.82,0.83
-A. baumannii ATCC19606,SVM,265,0.88,0.06,0.61,0.8,0.82,0.8,0.81
-A. baumannii ATCC19606,RF,265,0.9,0.05,0.6,0.84,0.84,0.89,0.86
-A. baumannii ATCC19606,XGBoost,265,0.9,0.05,0.59,0.83,0.82,0.87,0.85
-K. pneumoniae NCTC418,MLP,265,0.9,0.06,0.5,0.86,0.82,0.7,0.73
-K. pneumoniae NCTC418,SVM,265,0.87,0.07,0.59,0.85,0.83,0.6,0.68
-K. pneumoniae NCTC418,RF,265,0.86,0.08,0.4,0.83,0.73,0.63,0.66
-K. pneumoniae NCTC418,XGBoost,265,0.85,0.08,0.42,0.8,0.72,0.63,0.64
-MRSA (S. aureus COL),MLP,265,0.89,0.04,0.56,0.82,0.81,0.75,0.78
-MRSA (S. aureus COL),SVM,265,0.84,0.04,0.6,0.8,0.86,0.65,0.74
-MRSA (S. aureus COL),RF,265,0.85,0.04,0.56,0.79,0.76,0.74,0.75
-MRSA (S. aureus COL),XGBoost,265,0.86,0.02,0.57,0.77,0.73,0.74,0.73
+strain,model,AUC,AUC_std,AUC_scrambled,accuracy,precision,recall,F1
+E. coli W3110,MLP,0.85,0.06,0.57,0.84,0.87,0.94,0.9
+E. coli W3110,SVM,0.8,0.07,0.55,0.8,0.8,1.0,0.89
+E. coli W3110,RF,0.73,0.09,0.52,0.79,0.81,0.96,0.88
+E. coli W3110,XGBoost,0.77,0.08,0.55,0.8,0.84,0.93,0.88
+P. aeruginosa PAO1,MLP,0.81,0.08,0.57,0.77,0.79,0.7,0.74
+P. aeruginosa PAO1,SVM,0.8,0.09,0.55,0.77,0.79,0.7,0.74
+P. aeruginosa PAO1,RF,0.78,0.09,0.53,0.69,0.67,0.71,0.69
+P. aeruginosa PAO1,XGBoost,0.77,0.09,0.6,0.7,0.68,0.66,0.67
+A. baumannii ATCC19606,MLP,0.92,0.06,0.53,0.84,0.86,0.84,0.85
+A. baumannii ATCC19606,SVM,0.89,0.06,0.6,0.79,0.83,0.8,0.81
+A. baumannii ATCC19606,RF,0.91,0.05,0.56,0.83,0.82,0.88,0.85
+A. baumannii ATCC19606,XGBoost,0.9,0.05,0.6,0.84,0.85,0.87,0.85
+K. pneumoniae NCTC418,MLP,0.89,0.06,0.48,0.85,0.81,0.69,0.73
+K. pneumoniae NCTC418,SVM,0.87,0.08,0.46,0.85,0.83,0.62,0.7
+K. pneumoniae NCTC418,RF,0.85,0.06,0.54,0.85,0.82,0.65,0.71
+K. pneumoniae NCTC418,XGBoost,0.82,0.06,0.52,0.8,0.68,0.63,0.64
+MRSA (S. aureus COL),MLP,0.88,0.08,0.6,0.82,0.83,0.75,0.77
+MRSA (S. aureus COL),SVM,0.85,0.08,0.54,0.74,0.76,0.59,0.66
+MRSA (S. aureus COL),RF,0.86,0.07,0.59,0.79,0.78,0.75,0.75
+MRSA (S. aureus COL),XGBoost,0.84,0.09,0.58,0.81,0.79,0.77,0.77
