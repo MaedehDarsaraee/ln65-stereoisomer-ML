@@ -66,6 +66,7 @@ Built with Python 3.9, scikit‑learn 1.4.1, XGBoost 2.1.4, SHAP.
 
 ## License
 
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
