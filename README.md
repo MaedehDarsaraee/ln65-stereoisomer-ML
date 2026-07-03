@@ -60,11 +60,6 @@ pip install -r requirements.txt
 
 Built with Python 3.9, scikit‑learn 1.4.1, XGBoost 2.1.4, SHAP.
 
-## Reproducing the results
-
-Run the notebooks in `notebooks/`. A fixed random seed (`random_state = 42`) is used
-throughout. Cross‑validation of the augmented (620) model keeps mirror‑image pairs in the
-same fold to avoid information leakage.
 
 ## Citation
 
