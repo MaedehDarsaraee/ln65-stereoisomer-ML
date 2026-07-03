@@ -74,5 +74,5 @@ same fold to avoid information leakage.
 
 ## Contact
 
-Maedeh Darsaraee — maedeh.darsaraee@unibe.ch
+Maedeh Darsaraee [maedeh.darsaraee@unibe.ch]
 Reymond group, University of Bern.
