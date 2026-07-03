@@ -38,15 +38,15 @@ nearest‑neighbor (point‑mutation) approach.
 | File | Description |
 |------|-------------|
 | `synthesized.csv` | initial training set (269 entries) exactly as used to train the first-round model and generate the prospective candidates |
-| `synthesized_full-deduplicated.csv` | 321 experimentally tested stereoisomers (deduplicated), with `active` and `not hemolytic` labels |
-| `augmented_deduplicated.csv` | 620‑stereoisomer augmented set (measured + missing mirror‑image enantiomers) |
+| `synthesized_full.csv` | 321 experimentally tested stereoisomers, with `active` and `not hemolytic` labels |
+| `augmented.csv` | 620‑stereoisomer augmented set (measured + missing mirror‑image enantiomers) |
 | `synthesized_Hippo.csv` | 31 previously reported ln65 stereoisomers (CD analysis) |
 | `cd_data_with_act_hem_labels.xlsx` | circular‑dichroism measurements with activity/hemolysis labels |
 
 > **Note on `synthesized.csv`:** this file contains a small number of duplicate entries and one
 > activity label later found to be incorrect. It is retained unchanged so that the reported
-> initial-model results (`01_model_eval.ipynb`) can be reproduced exactly. The corrected,
-> deduplicated dataset (`synthesized_full-deduplicated.csv`) is used for the full and augmented
+> initial-model results (`01_model_eval.ipynb`) can be reproduced exactly. The corrected
+> dataset (`synthesized_full.csv`) is used for the full and augmented
 > model analyses.
 
 ### `models/`
