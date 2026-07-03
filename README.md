@@ -26,7 +26,7 @@ nearest‑neighbor (point‑mutation) approach.
 
 ```
 .
-├── data/        # experimental datasets and CD data
+├── data/        # experimental datasets
 ├── models/      # trained MLP models (joblib)
 ├── output/      # model predictions over the design space and candidate sets
 ├── notebooks/   # analysis notebooks (run in order)
@@ -40,8 +40,6 @@ nearest‑neighbor (point‑mutation) approach.
 | `synthesized.csv` | initial training set (269 entries) exactly as used to train the first-round model and generate the prospective candidates |
 | `synthesized_full.csv` | 321 experimentally tested stereoisomers, with `active` and `not hemolytic` labels |
 | `augmented.csv` | 620‑stereoisomer augmented set (measured + missing mirror‑image enantiomers) |
-| `synthesized_Hippo.csv` | 31 previously reported ln65 stereoisomers (CD analysis) |
-| `cd_data_with_act_hem_labels.xlsx` | circular‑dichroism measurements with activity/hemolysis labels |
 
 > **Note on `synthesized.csv`:** this file contains a small number of duplicate entries and one
 > activity label later found to be incorrect. It is retained unchanged so that the reported
@@ -73,7 +71,6 @@ nearest‑neighbor (point‑mutation) approach.
 | `gpt_generation.ipynb` | model training and prediction over the 2048 design space |
 | `full_model_analysis.ipynb` | full and augmented model training and evaluation |
 | `02_model_analysis.ipynb` | prediction scatter and SHAP analysis (Figure 4) |
-| `cd_scatter.ipynb` | circular‑dichroism analysis (Figure 5) |
 | `LN65-tmap.ipynb` | design‑space map (TMAP) |
 
 ## Installation
